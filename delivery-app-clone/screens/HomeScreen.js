@@ -8,6 +8,7 @@ import {
     AdjustmentsIcon,
     AdjustmentsVerticalIcon,
 }   from "react-native-heroicons/outline"; 
+import Categories from "../components/Categories";
 
 const HomeScreen = () => {
     const navigation = useNavigation();
@@ -56,8 +57,13 @@ const HomeScreen = () => {
         </View>
         
         {/*body*/}
-        <ScrollView>
+        <ScrollView className='bg-gray-100'
+        contentContainerStyle={{
+            paddingBottom: 100,
+        }}>
             {/*Categories*/}
+                <Categories/>
+            {/*Featured Rows*/}
         </ScrollView>
 
     </SafeAreaView>
